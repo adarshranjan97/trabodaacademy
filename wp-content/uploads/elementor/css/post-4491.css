@@ -3008,9 +3008,10 @@ body.rtl .elementor-4491 .elementor-element.elementor-element-2a379679 {
     --margin-inline-end: 0px;
 }
 
-.elementor-4491 .elementor-element.elementor-element-710c4a70:not(.elementor-motion-effects-element-type-background),
+.elementor-4491 .elementor-element.elementor-element-710c4a70
 .elementor-4491 .elementor-element.elementor-element-710c4a70>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-image: url("https://zoople.in/wp-content/uploads/2024/02/wepik-export-20231007084936GSM5-1.png");
+    background-image: none !important;
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto;
