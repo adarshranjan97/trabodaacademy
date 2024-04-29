@@ -4367,7 +4367,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="elementor-element elementor-element-5cb6c402 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="5cb6c402" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
                                     <div class="e-con-inner">
                                         <div class="elementor-element elementor-element-11c10d14 elementor-align-center elementor-widget elementor-widget-button" data-id="11c10d14" data-element_type="widget" data-widget_type="button.default">
-                                            <div class="elementor-widget-container">
+                                            <div class="elementor-widget-container" style="margin-top: 1rem;">
                                                 <div class="elementor-button-wrapper">
                                                     <a class="elementor-button elementor-button-link elementor-size-sm" href="https://zoople.in/gallery/">
 						<span class="elementor-button-content-wrapper">
@@ -4382,6 +4382,149 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                         </div>
                     </div>
+                    <!-- code for gallery -->
+                    <style>
+                        *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.material-fill-1 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+p{
+  color: white;
+  font-size: 0.8rem;
+  text-align: center; 
+  margin-top: 1rem;
+}
+a{
+  color: orange;
+}
+a:hover{
+  text-decoration: underline;
+}
+.gallery {
+    --_height: 250px; 
+    --_gap: .5rem;
+  
+    --_grid-rows: var(--_height) var(--_height) var(--_height);
+    --_height-hover: calc(var(--_height) * 2);
+    --_height-not-hover: calc(var(--_height) / 2);
+  
+    width: 100%;  
+    max-width: 800px;
+    display: grid;
+    gap: var(--_gap);
+}
+@media (min-width:720px){
+  .gallery {
+      grid-template-columns: repeat(3,1fr);
+  }
+  
+}
+.gallery>div {
+    height: fit-content;
+    display: grid;
+    grid-template-rows: var(--_grid-rows);
+    gap: var(--_gap);
+    transition: grid-template-rows 300ms ease-in-out;
+}
+.gallery>div>article {
+    position: relative;
+}
+.gallery>div>article>div{
+   position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  font-size: 0.65rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .15rem 0.5rem;
+  
+}
+.gallery>div>article>div>span{
+  font-size: 0.7rem;
+  color: red;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery>div:has(>article:nth-child(1):hover) {
+    --_grid-rows: var(--_height-hover) var(--_height-not-hover) var(--_height-not-hover);
+}
+.gallery>div:has(>article:nth-child(2):hover) {
+    --_grid-rows: var(--_height-not-hover) var(--_height-hover) var(--_height-not-hover);
+}
+.gallery>div:has(>article:nth-child(3):hover) {
+    --_grid-rows: var(--_height-not-hover) var(--_height-not-hover) var(--_height-hover);
+}
+.gallery>div>article:hover {
+    background-color: rgb(151, 152, 201);
+    color: #FFF;
+}
+                    </style>
+                    
+                    <section class="gallery" style="margin: 1rem auto;">
+                        <div>
+                          <article>
+                            <img src="./grp.jpg" alt="motorbike 1">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                          <article>
+                            <img src="./grp.jpg" alt="motorbike 2">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                          <article>
+                            <img src="./grp.jpg" alt="notorbike 3">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                      
+                        </div>
+                        <div>
+                          <article>
+                            <img src="./grp.jpg" alt="mountains 1">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                          <article>
+                            <img src="./grp.jpg" alt="hand">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                          <article>
+                            <img src="./grp.jpg" alt="beach">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                      
+                        </div>
+                        <div>
+                          <article>
+                            <img src="./grp.jpg" alt="man on rock">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                          <article>
+                            <img src="./grp.jpg" alt="trees">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                          <article>
+                            <img src="./grp.jpg" alt="sky">
+                            <div><span class="material-symbols-outlined material-fill-1"></span></div>
+                          </article>
+                      
+                        </div>
+                      
+                      </section>
+                      
+                    <!-- code for gallery -->
+
                     <div class="elementor-element elementor-element-1e022c33 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="1e022c33" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}"
                         data-core-v316-plus="true">
                         <!-- <div class="e-con-inner">
@@ -4782,7 +4925,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-4effc526 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="4effc526" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                            <!-- <div class="elementor-element elementor-element-4effc526 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="4effc526" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
                                 <div class="elementor-element elementor-element-57e68480 elementor-align-right elementor-widget elementor-widget-button" data-id="57e68480" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
@@ -4794,7 +4937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div> 
                     <div class="elementor-element elementor-element-71653641 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="71653641" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}"
@@ -5305,7 +5448,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-3e55e286 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="3e55e286" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                                <div class="elementor-element elementor-element-4495e388 elementor-align-center elementor-widget elementor-widget-button" data-id="4495e388" data-element_type="widget" data-widget_type="button.default">
+                                <!-- <div class="elementor-element elementor-element-4495e388 elementor-align-center elementor-widget elementor-widget-button" data-id="4495e388" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-sm" href="https://zoople.in/blog/">
@@ -5315,7 +5458,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -5431,10 +5574,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <h2 class="elementor-heading-title elementor-size-default">Frequently Asked Questions</h2>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-3388eda9 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="3388eda9" data-element_type="widget" data-widget_type="text-editor.default">
+                            <!-- <div class="elementor-element elementor-element-3388eda9 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="3388eda9" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    More Questions? <a class="s_text" href="#">Schedule a call</a> with an educational advisor, or email us at <a class="s_text" href="#"><span class="__cf_email__" data-cfemail="acc5c2cac3ecd6c3c3dcc0c982c5c2">[email&#160;protected]</span></a>                                    </div>
-                            </div>
+                                    More Questions? <a class="s_text" href="#" style="color: #341C94;">Schedule a call</a> with an educational advisor, or email us at <a class="s_text" href="#"><span class="__cf_email__" data-cfemail="acc5c2cac3ecd6c3c3dcc0c982c5c2">[email&#160;protected]</span></a>                                    </div>
+                            </div> -->
                             <div class="elementor-element elementor-element-a0e5067 elementor-widget elementor-widget-elementskit-accordion" data-id="a0e5067" data-element_type="widget" data-widget_type="elementskit-accordion.default">
                                 <div class="elementor-widget-container">
                                     <div class="ekit-wid-con">
